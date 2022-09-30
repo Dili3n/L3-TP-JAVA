@@ -3,7 +3,7 @@
  -------------------------------------------
  ### Exercice 1 - Assignation, égalité, référence
  
- 2. Quel est le type de s ? Comment le compilateur fait-il pour savoir qu'il existe une méthode length() sur s ?
+ #####2. Quel est le type de s ? Comment le compilateur fait-il pour savoir qu'il existe une méthode length() sur s ?
  
  Le programme nous affiche true pour s1 == s2 car == compare les adresses
  de s1 et s2 qui sont les mêmes.
