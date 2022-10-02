@@ -81,8 +81,10 @@ vu dans le cours [ici](https://igm.univ-mlv.fr/~beal/Teaching/poo2.pdf)
  
  Le soucis avec les bytes est que un byte est compris entre -128 et 127.
  Pour faire un affichage entre 0 et 255 il faut utiliser sur une 
- variable 
- ``byte & 0xFF``
+ variable  
+ 
+ ``byte & 0xFF``  
+ 
  J'ai préféré utilisé la méthode Arrays.toString vu pendant le cours au lieu de
  faire une boucle for qui print un par un les byte en faisant & 0xFF sur chaque byte.
  
