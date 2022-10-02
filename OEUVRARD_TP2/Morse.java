@@ -11,13 +11,3 @@ public class Morse {
       System.out.println(stop);
     }
 }
-
-/* 2)
-StringBuilder permet de créer une chaine de caractères.
-Pourquoi
-*/
-
-/* 3)
-En l'écrivant comme ça, c'est plus lisible.
-*/
-
