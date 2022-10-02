@@ -73,6 +73,21 @@ vu dans le cours [ici](https://igm.univ-mlv.fr/~beal/Teaching/poo2.pdf)
  
  ``var pattern = Pattern.compile("\\d+");``
  
+ #### Infos Exercice 3 :   
+ 
+ Pour l'affichage de l'ip, utilisation du Arrays.toString.
+ 
+ ``System.out.println(Arrays.toString(ip.verifIp(ip.adresse())));``
+ 
+ Le soucis avec les bytes est que un byte est compris entre -128 et 127.
+ Pour faire un affichage entre 0 et 255 il faut utiliser sur une 
+ variable 
+ ``byte & 0xFF``
+ J'ai préféré utilisé la méthode Arrays.toString vu pendant le cours au lieu de
+ faire une boucle for qui print un par un les byte en faisant & 0xFF sur chaque byte.
+ 
+Voila pourquoi l'affichage de l'ip est des fois négatif quand un bit dépasse 127.
+ 
  -------------------------------------------
  
  Liens qui m'ont aidé à mieux comprendre java / le TP :    
