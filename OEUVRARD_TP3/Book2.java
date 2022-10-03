@@ -22,13 +22,3 @@ public class Book2 {
     this.author = author;
   }
 }
-
-
-/* 
-Exercice 3
-
-Le equals n'est pas possible car contrairement à un record
-une class n'intrègre pas directement les méthodes HashCode et Equals
-Il faut réécrire HashCode et Equals, Ne pas oublier Override.
-
-*/
