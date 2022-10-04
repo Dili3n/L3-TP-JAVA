@@ -101,8 +101,8 @@ Il faut réécrire HashCode et Equals, Ne pas oublier Override.
  
  ``var array = new int[] { 1, 8, 17, 5, 6 };``
  
- Avec ce tableau on appel une classe qui effectue le travail, grâce à la 
- méthode IndexOfMin et Swap.
+Avec ce tableau on appel une classe qui effectue le travail, grâce à la 
+méthode IndexOfMin et Swap.
  -------------------------------------------
  
  Liens qui m'ont aidé à mieux faire le TP :    
