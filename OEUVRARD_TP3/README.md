@@ -12,11 +12,11 @@ book.author réfère à "Dan Brown".
 
  ####  3. Quel est le problème ? Comment peut-on le corriger ?
  
-Main.java:5: error: title has private access in Book
+``Main.java:5: error: title has private access in Book
     System.out.println(book.title + ' ' + book.author);
                            ^
 Main.java:5: error: author has private access in Book
-    System.out.println(book.title + ' ' + book.author);
+    System.out.println(book.title + ' ' + book.author);``
 
 On a pas accès à la méthode Book, book.title et book.author sont privés.
 
@@ -26,24 +26,24 @@ On peut donc rajouter () pour appeler une méthode.
  ####  4. Comment faire pour éviter ce problème sachant qu'il existe une méthode static requireNonNull dans la classe java.util.Objects.
  
 Création d'un constructeur, avec requireNonNull
-pour montrer 
+pour montrer   
 
-public Book {
+``public Book {
   Objects.requireNonNull(auteur, "auteur doit etre non null");
-}
+}``
  
  #### 6.
  
- Appel du constructeur canonique avec this(title, "<no author>");
+ Appel du constructeur canonique avec ``this(title, "<no author>");``
 qui permet de donner deux arguments.
  
   #### 7. Comment le compilateur fait-il pour savoir quel constructeur appeler ?
 
   #### 8. Pourquoi le code suivant ne marche pas ? Comment faire alors ?
   
-  Dans un record on ne modifie pas un champ il est private ! 
-./Book.java:15: error: cannot assign a value to final variable title
-    this.title = title;
+  Dans un record on ne modifie pas un champ il est private !   
+``./Book.java:15: error: cannot assign a value to final variable title
+    this.title = title;``
 
 Il faut créer une nouvel object pour permettre de changer le titre d'un livre
  
