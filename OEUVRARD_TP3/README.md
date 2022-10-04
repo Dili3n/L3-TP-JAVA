@@ -13,9 +13,9 @@ book.author réfère à "Dan Brown".
  ####  3. Quel est le problème ? Comment peut-on le corriger ?
  
 ``Main.java:5: error: title has private access in Book
-    System.out.println(book.title + ' ' + book.author);
-                           ^
-Main.java:5: error: author has private access in Book
+    System.out.println(book.title + ' ' + book.author);``
+                      
+``Main.java:5: error: author has private access in Book
     System.out.println(book.title + ' ' + book.author);``
 
 On a pas accès à la méthode Book, book.title et book.author sont privés.
@@ -97,6 +97,9 @@ Il faut réécrire HashCode et Equals, Ne pas oublier Override.
  
  ### Exercice 4 - Tri à caillou [à la maison]
  
+ Création d'un tableau d'entier 
+ 
+ ``var array = new int[] { 1, 8, 17, 5, 6 };
  -------------------------------------------
  
  Liens qui m'ont aidé à mieux comprendre java / le TP :    
