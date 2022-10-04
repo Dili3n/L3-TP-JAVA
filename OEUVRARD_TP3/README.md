@@ -99,10 +99,13 @@ Il faut réécrire HashCode et Equals, Ne pas oublier Override.
  
  Création d'un tableau d'entier 
  
- ``var array = new int[] { 1, 8, 17, 5, 6 };
+ ``var array = new int[] { 1, 8, 17, 5, 6 };``
+ 
+ Avec ce tableau on appel une classe qui effectue le travail, grâce à la 
+ méthode IndexOfMin et Swap.
  -------------------------------------------
  
- Liens qui m'ont aidé à mieux comprendre java / le TP :    
+ Liens qui m'ont aidé à mieux faire le TP :    
  [Java](https://docs.oracle.com/en/java/javase/16/docs/api/)   
  [Cours Classes](https://igm.univ-mlv.fr/~beal/Teaching/poo3.pdf)
  
