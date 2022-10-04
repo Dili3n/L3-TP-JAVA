@@ -58,15 +58,18 @@ car b1 n'est pas le même objet de que b3.
   
   #### 2. 
   
-  Grace à equals.
+  Grace à equals.  
+ 
    `` System.out.println(b1.title().equals(b2.title()) && b1.author().equals(b2.author()));
     System.out.println(b1.title().equals(b3.title()) && b1.author().equals(b3.author()));``
   
   #### 4 .Comment faire pour que le code suivant
   
-  Pour que le code suivant
+  Pour que le code suivant  
+ 
 ``var javaBook = new Book("Da Java Code", "Duke Brown");
-System.out.println(javaBook);``
+System.out.println(javaBook);``  
+ 
 affiche
 Da Java Code by Duke Brown
 Il faut redéfinir la méthode toString du record
