@@ -103,6 +103,7 @@ Il faut réécrire HashCode et Equals, Ne pas oublier Override.
  
 Avec ce tableau on appel une classe qui effectue le travail, grâce à la 
 méthode IndexOfMin et Swap.
+
  -------------------------------------------
  
  Liens qui m'ont aidé à mieux faire le TP :    
