@@ -39,5 +39,9 @@ public class Main {
     var book32 = new Book2("Da Vinci Code", "Dan Brown");
     System.out.println(book31.equals(book32));
 
+    /* Exercice 4 */
+    var array1 = new int[] { 4, 8, 9, 12, 1 };
+    Tri.sort(array1);
+
   }
 }

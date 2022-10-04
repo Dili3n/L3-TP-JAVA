@@ -1,4 +1,6 @@
-class public Tri {
+import java.util.*;
+
+class Tri {
 
   public static void swap(int[] array, int index1, int index2){
 
@@ -8,31 +10,28 @@ class public Tri {
 
   }
 
-  public static boolean indexOfMin(int[] array, int first, int last){
+  public static int indexOfMin(int[] array, int first, int last){
     
     var min = 0;
     var i = 0;
 
     for(i = first; i < last; i++){
 
-      if (array[min] > elem){
+      if (array[min] > array[i]){
         min = i;  
       }
       i++;
     }
-    return i;
+    return min;
   }
 
-  public static void sort(int[] array, int first, int last){
+  public static void sort(int[] array) {
 
-    var i = 0;
-    var j = 0;
-
-    for(var elem : array){
-      j = indexOfMin(array, i, last);
-      swap(array, i, j);
-      i ++;
+    for(var i = 0; i < array.length; i++){
+      int res = indexOfMin(array, i, array.length - 1);
+      swap(array, res, i);
     }
+    System.out.println(Arrays.toString(array));
   }
 
 
