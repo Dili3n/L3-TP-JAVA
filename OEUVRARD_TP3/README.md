@@ -65,7 +65,7 @@ car b1 n'est pas le même objet de que b3.
   
   #### 4 .Comment faire pour que le code suivant
   
-  Pour que le code suivant  
+  Pour que le code suivant   
  
 ``var javaBook = new Book("Da Java Code", "Duke Brown");
 System.out.println(javaBook);``  
