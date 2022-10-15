@@ -92,12 +92,13 @@ private ArrayList<Book> books;
 public Library() {   
 	books = new ArrayList<>();   
 }  
-  
+  ``
+  ``
 public void add(Book book) {  
 	Objects.requireNonNull(book);  
 	books.add(book);  
-}  
-  
+}  ``
+  ``
 public Book findByTitle(String titre) {  
 	  
 	for(var elem : books) {  
@@ -107,7 +108,8 @@ public Book findByTitle(String titre) {
 	}  
 	return null;  
 }  
-    
+   ``
+   ``
 public String toString() {  
 	  
 	var livre = new StringBuilder();  
@@ -116,9 +118,8 @@ public String toString() {
 		livre.append(elem).append("\n");  
 	}  
 	  
-	return livre.toString();  
+	return livre.toString();
   ``
-  
  ##### 4.
  
  On préfère une class pour l'encapsulation qu'un record n'a pas...
