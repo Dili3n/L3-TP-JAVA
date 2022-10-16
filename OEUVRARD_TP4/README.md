@@ -77,17 +77,20 @@ public String toString() {
  
  
  ###### 1. Quelle est la complexité de la méthode findByTitle de la classe Library ?
- 
- Le nombre d'élément dans books.
+  O(n)
  
  ##### 2.
  
- Avec map la compléxité sera de 1.
+ Avec map la compléxité sera de O(1).
+ C'est une collection de donnée avec une clé et une valeur,
+ avec un clé unique.
+ L'utilisation de Map pour améliorer la performance.
+ 
  
  ##### 3. Code de l'exercice 2.
   
 ```
-private ArrayList<Book> books;  
+private final ArrayList<Book> books;  
   
 public Library() {   
 	books = new ArrayList<>();   
