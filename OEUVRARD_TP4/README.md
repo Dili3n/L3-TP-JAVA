@@ -134,6 +134,8 @@ Il suffit de remplacer les HashMap par LinkedHashMap dans le code.
 
 ##### 8. Implanter correctement la méthode removeAllBooksFromAuthor.
 
+For each appel à remove, donc change la structure de donnée...
+
 ``
 for (var entry : books.entrySet()) {
 	var key = entry.getKey();
