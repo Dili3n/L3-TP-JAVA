@@ -7,7 +7,7 @@ import java.util.Objects;
 
 public class Library {
 	
-	private LinkedHashMap<String, Book> books;
+	private final LinkedHashMap<String, Book> books;
 	
 	public Library() {
 		books = new LinkedHashMap<>();
