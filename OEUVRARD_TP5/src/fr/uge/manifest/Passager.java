@@ -14,6 +14,11 @@ public record Passager(String destination) implements Item {
 	}
 	
 	@Override
+	public int weight() {
+		return 0;
+	}
+	
+	@Override
 	public boolean isContainer() {
 		return false;
 	}

@@ -1,6 +1,7 @@
 package fr.uge.manifest;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Objects;
 
 public class Manifest {
@@ -11,13 +12,13 @@ public class Manifest {
 		dest = new ArrayList<>();
 	}
 	
-//	public int weight() {
-//		var res = 0;
-//		for(var elem : dest) {
-//			res += elem.weight();
-//		}
-//		return res;
-//	}
+	public int weight() {
+		var res = 0;
+		for(var elem : dest) {
+			res += elem.weight();
+		}
+		return res;
+	}
 	
 	public void add(Item c) {
 		Objects.requireNonNull(c);
@@ -39,6 +40,20 @@ public class Manifest {
 	
 	public boolean isContainer(Item c) {
 		return c.isContainer();
+	}
+	
+	
+	public HashMap<String, Integer> weightPerDestination(){
+		var map = new HashMap<String, Integer>();
+		for(var elem : dest) {
+			if(!map.containsKey(elem.destination())) {
+				map.put(elem.destination(), elem.weight());
+			} else {
+				var newWeight = map.get(elem.destination());
+				map.put(elem.destination(), Integer.valueOf(newWeight.intValue() + elem.weight()));
+			}
+		}
+		return map;
 	}
 	
 	@Override

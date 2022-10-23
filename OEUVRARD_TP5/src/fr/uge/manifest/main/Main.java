@@ -13,7 +13,7 @@ public class Main {
     var manifest = new Manifest();
     manifest.add(container2);
     manifest.add(container3);
-//    System.out.println(manifest.weight());  // 600
+    System.out.println(manifest.weight());  // 600
     var container4 = new Container("Spain", 250);
     var container5 = new Container("Swiss", 200);
     var manifest2 = new Manifest();
@@ -44,6 +44,17 @@ public class Main {
     System.out.println(manifest4);
     // 1. China 200kg
     // 2. Russia (passenger)
+    var container11 = new Container("Monaco", 100);
+    var passenger3 = new Passager("Paris");
+    var container13 = new Container("Monaco", 300);
+    var container12 = new Container("Luxembourg", 200);
+    var manifest8 = new Manifest();
+    manifest8.add(container11);
+    manifest8.add(container12);
+    manifest8.add(container13);
+    manifest8.add(passenger3);
+    System.out.println(manifest8.weightPerDestination());
+    // {Monaco=400, Paris=0, Luxembourg=200}
   }
 	
 }
