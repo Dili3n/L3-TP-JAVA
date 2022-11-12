@@ -28,6 +28,6 @@
  
  Liens qui m'ont aidé à mieux comprendre java / le TP :    
  [Java](https://docs.oracle.com/en/java/javase/16/docs/api/)   
- [Cours Pattern & Matcher](https://igm.univ-mlv.fr/~beal/Teaching/poo2.pdf)
+ [Cours n°6](https://igm.univ-mlv.fr/~beal/Teaching/poo6.pdf)
  
 
